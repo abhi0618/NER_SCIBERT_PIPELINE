@@ -6,7 +6,7 @@ For Executing the pipeliline script main.py that contains all the steps involved
 !git clone https://github.com/abhi0618/NER_SCIBERT_PIPELINE.git 
 
 # 2. Installing Required Libraries
-%cd /content/drive/MyDrive/NER_SCIBERT_PIPELINE
+%cd /content/drive/MyDrive/NER_SCIBERT_PIPELINE \
 !pip install -q -r requirements.txt
 
 *If you are using your local environment , change the cd path to your path where the repo is cloned. 
@@ -24,7 +24,7 @@ For Executing the pipeliline script main.py that contains all the steps involved
 --train_batch_size 16
 
 
-The main.py script that includes the execution steps, from the intial data-preprocessing(1) , vocabulary pretraining(2), NER FInetuning(3), and evaluation(4) of the model inferences on the training dataset of custom managment constructs.The data-preproccing script is invoked in the vocabulary pretraining part of the script that pretrains the model on our vocabulary dataset. The main.py script contains the input arguments for input data, pretraining ,traininig, as well as evaluation of dataset.
+The main.py script that includes the execution steps, from the intial data-preprocessing(1) , vocabulary pretraining(2), NER FInetuning(3), and evaluation(4) of the model inferences on the training dataset of custom managment constructs.The data-preproccing script is invoked in the vocabulary pretraining part of the script that pretrains the model on our vocabulary dataset. The main.py script contains the input arguments for input data, pretraining ,traininig, as well as evaluation of dataset.\
 
 The model can also be run on the existing vocabulary pretraining of the model.To do it without the pretraining or Language modelling of the model on our dataset, and continue with existing vocabulary pretraining , simple pass the argument --pre_train False  , instead of the --pre_train True .This is recommended to avoid use of an intense heavy resource enviroment, espicially in systems with low GPU memory, like local system environment.
 
