@@ -6,7 +6,7 @@ For Executing the pipeliline script main.py that contains all the steps involved
 !git clone https://github.com/abhi0618/NER_SCIBERT_PIPELINE.git 
 
 # 2. Installing Required Libraries
-%cd /content/drive/MyDrive/NER_SCIBERT_PIPELINE \
+%cd /content/NER_SCIBERT_PIPELINE \
 !pip install -q -r requirements.txt
 
 *If you are using your local environment , change the cd path to your path where the repo is cloned. 
