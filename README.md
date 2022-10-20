@@ -11,7 +11,7 @@ For Executing the pipeliline script main.py that contains all the steps involved
 
 *If you are using your local environment , change the cd path to your path where the repo is cloned. 
 
-#3. Running the main pipeline script main.py
+# 3. Running the main pipeline script main.py
 
 !python main.py --input_dir "data/data.csv" \
 --model_name_or_path "allenai/scibert_scivocab_uncased" \
