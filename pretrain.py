@@ -13,7 +13,7 @@ def pre_train(input_dir, block_size, model_name, epochs, batch_size, save_steps)
     model = AutoModelWithLMHead.from_pretrained(model_name)
     tokenizer = AutoTokenizer.from_pretrained(model_name)
     dataset= LineByLineTextDataset(tokenizer = tokenizer,
-                                   file_path = 'data/pre_train_text.txt',
+                                   file_path = 'data/Pre_Train_Data_60000.txt',
                                    block_size = block_size )
     data_collator = DataCollatorForLanguageModeling(
         tokenizer=tokenizer, 
