@@ -13,7 +13,7 @@ For Executing the pipeliline script main.py that contains all the steps involved
 
 # 3. Running the main pipeline script main.py
 
-!python main.py --input_dir "data/data.csv" \
+!python main.py --input_dir "data/NER_500_Custom_Constructs_Labeling.csv" \
 --model_name_or_path "allenai/scibert_scivocab_uncased" \
 --pre_train True \
 --pre_train_block_size 128 \
